@@ -1,6 +1,6 @@
-document.getElementById('ex2').setAttribute('data-slider-value', "[1459833540, " + Math.floor(Date.now()) + "]");
-document.getElementById('ex2').setAttribute('data-slider-min', 1459833540);
-document.getElementById('ex2').setAttribute('data-slider-max', Math.floor(Date.now()));
+document.getElementById('ex2').setAttribute('data-slider-value', "[" + 0 + ", " + (Math.floor(Date.now()) - 60*60*24*365*47*1000) + "]");
+document.getElementById('ex2').setAttribute('data-slider-min', 0);
+document.getElementById('ex2').setAttribute('data-slider-max', (Math.floor(Date.now()) - 60*60*24*365*47*1000));
 document.getElementById('ex2').setAttribute('data-slider-step', 10000);
 
 var slider = new Slider('#ex2', {});
@@ -26,10 +26,15 @@ function timeConverter(UNIX_timestamp){
   return time;
 }
 
+start_time  = 0;
+end_time = 0;
+
 $('#ex2').on('change', function(e) {
 	var data = e.target.value.split(',');
 	document.getElementById("start_time").textContent = timeConverter(data[0]/1000);
-	document.getElementById("end_time").textContent = timeConverter(data[1]/1000);	
+	start_time = data[0];
+	document.getElementById("end_time").textContent = timeConverter(data[1]/1000);
+	end_time = data[1];
 })
 //$('#ex2').data-slider-max 
 

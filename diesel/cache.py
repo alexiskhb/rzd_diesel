@@ -8,11 +8,11 @@ class DataGetter:
         print("Loading database...", flush=True)
 
         with connection.cursor() as cursor:
-            cursor.execute("""select * from dbloko.full_sql_locodataseconds limit 10000""")
+            cursor.execute("""select * from dbloko.full_sql_locodataseconds""")
             self.locodataseconds_data = list(cursor.fetchall())
 
         with connection.cursor() as cursor:
-            cursor.execute("""select * from dbloko.full_sql_loco limit 10000""")
+            cursor.execute("""select * from dbloko.full_sql_loco""")
             self.loco_data = list(cursor.fetchall())
 
         self.num2id = {}
@@ -20,7 +20,7 @@ class DataGetter:
             self.num2id[dt[0]] = dt[0]
 
         with connection.cursor() as cursor:
-            cursor.execute("""select * from dbloko.full_sql_locotype limit 10000""")
+            cursor.execute("""select * from dbloko.full_sql_locotype""")
             self.locotype_data = list(cursor.fetchall())
 
         print("Cache initialized", flush=True)

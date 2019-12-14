@@ -10,13 +10,7 @@ var tolerances_max = {
   mode: 'lines+markers'
 };
 
-var trace3 = {
-  x: [1, 2, 3, 4],
-  y: [12, 9, 15, 12],
-  mode: 'lines+markers'
-};
-
-var data = [ tolerances_min, tolerances_max, trace3 ];
+var data = [ tolerances_min, tolerances_max ];
 
 var layout = {};
 
