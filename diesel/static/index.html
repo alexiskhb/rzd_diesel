@@ -1,0 +1,128 @@
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Blinov, Shchurov">
+  <meta name="generator" content="Jekyll v3.8.6">
+  <title>Wind2</title>
+
+  <link href="static/css/bootstrap.css" rel="stylesheet">
+
+  <meta name="theme-color" content="#563d7c">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="static/css/dashboard.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/css/bootstrap-slider.css">
+
+  <style type="text/css">/* Chart.js */
+    @-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style></head>
+<body>
+  <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">TurboPoezD</a>
+    <ul class="navbar-nav px-3">
+      <li class="nav-item text-nowrap">
+        <a class="nav-link" href="#">Wind1</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+        <div class="sidebar-sticky">
+
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            <span>Локомотивы</span>
+          </h6>
+          <ul class="nav flex-column mb-2" id="ul_of_loko">
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">
+                Lenin 1940
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Red Star
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Power of Peoples
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Dinamo
+              </a>
+            </li> -->
+          </ul>
+        </div>
+      </nav>
+
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+        <!--<div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
+        </div>-->
+
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        
+
+          <h1 class="h2">Состояние ДГУ</h1>
+          <div class="btn-toolbar mb-2 mb-md-0">
+            <div class="btn-group mr-2">
+              
+              <div style="margin-right: 40px; margin-top: 5px;">
+
+                <b id=start_time style="margin-right: 10px; font-size: 12px;"></b> 
+                <input id="ex2" type="text" class="span2" style="width:500px" value="" data-slider-step="5" data-slider-value="[1459833, 1499833]"/>
+                <b id=end_time style="margin-left: 10px; font-size: 12px;"></b>
+                
+              </div>
+
+              <button type="button" style="min-width:100px" class="btn btn-outline-primary" id="requestSumm">Запросить отчёт</button>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="myDiv" style="position: relative; left: 0px; top: 0px; right: 0px; bottom: 0px; height: 550px; pointer-events: none; z-index: -1;"></div>
+
+        <!-- <canvas class="my-4 w-100 chartjs-render-monitor" id="myChart" width="742" height="312" style="display: block; height: 250px; width: 594px;"></canvas> -->
+          <div class="btn-group mr-2">
+            <button type="button" style="min-width:100px" class="btn btn-outline-primary">Норма</button>
+            <button type="button" style="min-width:100px" class="btn btn-outline-primary">Средне</button>
+            <button type="button" style="min-width:100px" class="btn btn-outline-primary">Плохо</button>
+          </div>
+          <button type="button" class="btn btn-outline-success">Отправить отчёт</button>
+          
+        
+      </main>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="static/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script type="text/javascript" src="static/js/plot.js"></script>
+  <script type="text/javascript" src="static/js/loko.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/bootstrap-slider.js"></script>
+  <script type="text/javascript" src="static/js/slider.js"></script>
+  <script type="text/javascript" src="static/js/button_handler.js"></script>>
+
+</body></html>
